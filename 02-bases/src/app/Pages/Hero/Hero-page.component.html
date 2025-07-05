@@ -1,0 +1,26 @@
+<h1>{{ nameSignal() }}</h1>
+
+<dl>
+  <td>Nombre:</td>
+  <dd>{{ nameSignal() }}</dd>
+
+  <td>Edad:</td>
+  <dd>{{ edadSignal() }}</dd>
+
+  <td>Método:</td>
+  <dd>{{ heroDescription() }}</dd>
+
+  <td>Capitalizado:</td>
+    <!-- ! Intentar  -->
+   <!-- <dd> {{ nameCapitalize() }} </dd> -->
+    <dd> {{ nameSignal() | uppercase }}</dd>
+
+  </dl>
+
+<button (click)="changeHero()" class="btn btn-primary mx-2">
+  Cambiar nombre
+</button>
+
+<button (click)="changeAge()"class="btn btn-primary">Cambiar edad</button>
+
+<button (click)="resetForm()" class="btn btn-primary mx-2">Reset</button>
